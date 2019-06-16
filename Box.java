@@ -24,16 +24,14 @@ class  Box
 	public static void main(String[] args) 
 	{
 		//sc instance
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Box dims--w d h");
+		
 		Box b;//as per JVM , bytes will be allocated on stack to store ref type of a var.
-		b=new Box(sc.nextDouble(),sc.nextDouble(),sc.nextDouble());
+		b=new Box(100,200,300);
 		//display dims
        b.displayBoxDetails();
 	   //display vol
 	   System.out.println("Box volume : "+b.calcVolume());
-		if (sc != null)
-		 sc.close();
+		
 	}
 }
 
